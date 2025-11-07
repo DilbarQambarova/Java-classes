@@ -11,7 +11,7 @@ public class Dowhile {
 //        String daxilEdilen;
 //
 //        do {
-//            System.out.print("Zəhmət olmasa sözü daxil edin: ");
+//            System.out.print("Sözü daxil edin: ");
 //            daxilEdilen = sc.nextLine();
 //        } while (!daxilEdilen.equals(soz));
 //
@@ -31,46 +31,45 @@ public class Dowhile {
 
 
         //Təsadüfi ədəd
-//    Random random = new Random();
-//
-//    int tesadufiEded = random.nextInt(10) + 1;
-//    int daxilEdilen;
-//    int cehdSay = 0;
-//
-//        do {
-//        System.out.print("1–10 arasında ədəd daxil edin: ");
-//        daxilEdilen = sc.nextInt();
-//        cehdSay++;
-//
-//        if(daxilEdilen < tesadufiEded){
-//            System.out.println("Yüksək ədəd seçin!");
-//        } else if(daxilEdilen > tesadufiEded){
-//            System.out.println("Aşağı ədəd seçin!");
-//        }
-//    } while(daxilEdilen != tesadufiEded);
-//
-//        System.out.println("Düzgün ədəd tapıldı: " + tesadufiEded);
-//        System.out.println("Cəhd sayı: " + cehdSay);
-//}
-//
+    Random random = new Random();
 
-        int eded;
-        int cem = 0;
+    int tesadufiEded = random.nextInt(10) + 1;
+    int daxilEdilen;
+    int cehdSay = 0;
+
         do {
-            System.out.print("Ədəd daxil edin: ");
-            eded = sc.nextInt();
-            cem += eded;
-            if (cem == 30) {
+        System.out.print("1–10 arasında ədəd daxil edin: ");
+        daxilEdilen = sc.nextInt();
+        cehdSay++;
 
-                System.out.println("Cəm 30 oldu.");
-            }
-        }while(cem < 30);
-
-        if(cem > 30){
-            System.out.println("Cəm 30-u keçdi: " + cem);
+        if(daxilEdilen < tesadufiEded){
+            System.out.println("Yüksək ədəd seçin!");
+        } else if(daxilEdilen > tesadufiEded){
+            System.out.println("Aşağı ədəd seçin!");
         }
-    }
+    } while(daxilEdilen != tesadufiEded);
+
+        System.out.println("Düzgün ədəd tapıldı: " + tesadufiEded);
+        System.out.println("Cəhd sayı: " + cehdSay);
 }
+
+
+//        int eded;
+//        int cem = 0;
+//        do {
+//            System.out.print("Ədəd daxil edin: ");
+//            eded = sc.nextInt();
+//            cem += eded;
+//            if (cem == 30) {
+//
+//                System.out.println("Cəm 30 oldu.");
+//            }
+//        }while(cem < 30);
+//
+//        if(cem > 30){
+//            System.out.println("Cəm 30-u keçdi: " + cem);
+//        }
+    }
 
 
 

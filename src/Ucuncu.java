@@ -6,7 +6,7 @@ public class Ucuncu {
     public static void main(String[] args) {
 
          //Ədədləri tərsinə çap etmək
-//        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 //        int n = sc.nextInt();
 //        while (n > 0) {
 //            n--;
@@ -64,17 +64,13 @@ public class Ucuncu {
 //            System.out.println("Cəmin hasilə nisbəti: " + nisbet);}
 
 //                        Ədədin ikinci rəqəmini tapmaq
-//        System.out.print("Bir ədəd daxil edin: ");
-//        int n = sc.nextInt();
-//        n = Math.abs(n);
-//        String ededStr = Integer.toString(n);
-//
-//        if (ededStr.length() < 2) {
-//            System.out.println("Ədədin ikinci rəqəmi yoxdur.");
-//        } else {
-//            char ikinciReqem = ededStr.charAt(1);
-//            System.out.println("Ədədin ikinci rəqəmi: " + ikinciReqem);
-//        }
+        System.out.print("Bir ədəd daxil edin: ");
+        int n = sc.nextInt();
+        while(n>99) {
+            n /= 10;
+        }
+            System.out.println(n%10);
+
 
              //Mükəmməl ədədlər
 //        System.out.println("0-dan 500-ə qədər mükəmməl ədədlər:");
